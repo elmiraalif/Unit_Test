@@ -1,13 +1,13 @@
+// jshint esversion:6
 //LAB 3 - UNIT TESTING
 //======== THIS FILE IS FOR THE UNIT TEST ==========
-
 
 
 
 function test__checkHumbrId(valueIn,expected){
     "use strict";
     let result = checkHumbrId(valueIn);
-    if(result===true){
+    if(result=== expectd){
         result = "==PASSED==";
     }
     else {
