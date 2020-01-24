@@ -5,16 +5,18 @@
  * Returns true if input validates.
  */
 
+ function checkHumbrId(studentNumber){
 
- function studentNumberValidator(studentNumber){
-
-   let regex_student = /(n | N)[0-9]{8}/;
-   if(studentNumber.match(regex_student)){
-     console.log(true);
+   let regex_student = /^(n|N)[0-9]{8}/;
+   if(!isNaN(studentNumber) || studentNumber === undefined)
+     {
+     return false;
+   }else if(studentNumber.match(regex_student)){
      return true;
-   }else if(!isNaN(studentNumber) || studentNumber === undefined){
+   }else
+   {
      return false;
    }
-   console.log(studentNumber);
 
  }
+test__checkHumbrId();
