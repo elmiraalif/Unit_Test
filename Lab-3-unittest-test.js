@@ -7,11 +7,12 @@
 function test__checkHumbrId(valueIn,expected){
     "use strict";
     let result = checkHumbrId(valueIn);
-    if(result=== expectd){
-        result = "==PASSED==";
+    
+    if(result=== expected){
+        result = "==PASSED==".fontcolor("green");
     }
     else {
-        result = "xxFAILEDxx";
+        result = "xxFAILEDxx".fontcolor("red");
     }
     let msg = "Value:" + valueIn + "| Expected : " + expected + " | Result : " + result + "<br>";
 
